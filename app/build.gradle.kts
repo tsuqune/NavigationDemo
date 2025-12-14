@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.navigationdemo"
     compileSdk {
-        version = release(34)
+        version = release(36)
     }
 
     defaultConfig {
@@ -43,12 +43,12 @@ android {
 }
 
 dependencies {
-    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    implementation("androidx.activity:activity-compose:1.8.0")
-    implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.core:core-ktx:1.12.0")
+    implementation(platform(libs.androidx.compose.bom.v20230800))
+    implementation(libs.androidx.activity.compose.v180)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.core.ktx.v1120)
 
     // Навигация
     implementation(libs.androidx.navigation3.runtime)
